@@ -5,22 +5,31 @@ title: Index page
 
 {% block content %}
 
+
 <div class="gallery">
   <div class="container">
     <div class="big-image">
+      <!--<div class="loader loader-clock is-active"></div>-->
       <img class="big-image__img" src="http://placehold.it/600/92c952" alt="">
     </div>
-    <ul class="image-list">
+    <div class="images-container">
+      <button class="prev-list">prev</button>
+      <ul class="image-list">
 
-    </ul>
+      </ul>
+      <button class="next-list">next</button>
+    </div>
   </div>
 
   <div class="overlay">
     <div class="preview">
       <img class="preview__img" src="http://placehold.it/600/92c952" alt="">
+      <button class="btn-prev"><</button>
+      <button class="btn-next">></button>
     </div>
   </div>
 </div>
+
 
 
 {% endblock %}
