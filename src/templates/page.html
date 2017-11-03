@@ -7,28 +7,29 @@ title: Index page
 
 
 <div class="gallery">
+  <div class="loader loader-clock is-active"></div>
   <div class="container">
     <div class="big-image">
-      <!--<div class="loader loader-clock is-active"></div>-->
       <img class="big-image__img" src="http://placehold.it/600/92c952" alt="">
     </div>
     <div class="images-container">
-      <button class="prev-list">prev</button>
+      <button class="prev-list">{{mixins.icon('prev')}}</button>
       <ul class="image-list">
 
       </ul>
-      <button class="next-list">next</button>
+      <button class="next-list">{{mixins.icon('next')}}</button>
     </div>
   </div>
 
   <div class="overlay">
     <div class="preview">
       <img class="preview__img" src="http://placehold.it/600/92c952" alt="">
-      <button class="btn-prev"><</button>
-      <button class="btn-next">></button>
+      <button class="btn-prev">{{mixins.icon('prev')}}</button>
+      <button class="btn-next">{{mixins.icon('next')}}</button>
     </div>
   </div>
 </div>
+
 
 
 
